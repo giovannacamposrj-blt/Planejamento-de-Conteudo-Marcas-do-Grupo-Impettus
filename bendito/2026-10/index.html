@@ -1,25 +1,1284 @@
-﻿<!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Momento Bendito · Outubro 2026 · Grupo Impettus</title>
-<meta name="robots" content="noindex">
+<!doctype html><html><head><meta charset=utf8><meta name=robots content=noindex><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<nav style="background:#231f1d;color:#f1ebe2;font:500 13px/1 'IBM Plex Sans',system-ui,sans-serif;padding:12px 20px;display:flex;gap:14px;flex-wrap:wrap"><a href="/" style="color:inherit;text-decoration:none">&larr; Todas as marcas</a><span style="opacity:.4">/</span><a href="/bendito/" style="color:inherit;text-decoration:none">Momento Bendito &middot; todos os meses</a></nav>
+<title>Planejamento Bendito</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/site.css">
-</head>
-<body class="b-bendito">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#fff6ec;
+    --cream-card:#fffcf7;
+    --maroon:#b3273c;
+    --maroon-dark:#8c1f30;
+    --brown:#3a2216;
+    --brown-soft:#6a4a3a;
+    --logo-brown:#6a2711;
+    --rose:#f3dad6;
+    --hair:#e9d9c8;
+    --shadow: 0 1px 2px rgba(58,34,22,.06), 0 6px 20px rgba(58,34,22,.08);
+    color-scheme: light;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    background:var(--cream);
+    color:var(--brown);
+    font-family:'IBM Plex Sans', system-ui, sans-serif;
+    padding-inline:20px;
+    padding-block: 0 64px;
+  }
+  h1,h2,h3, .display{
+    font-family:'Newsreader', Georgia, serif;
+    font-weight:500;
+    text-wrap:balance;
+  }
+  em{font-style:italic;}
+  .wrap{max-width:1160px;margin-inline:auto;}
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    position:relative;
+    margin-top:0;
+    height:10px;
+    background:var(--maroon);
+    margin-inline:-20px;
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;
+    margin-top:26px;
+    border-radius:22px;
+    overflow:hidden;
+    min-height:420px;
+    display:flex;
+    align-items:flex-end;
+    box-shadow:0 14px 40px rgba(58,22,10,.22);
+  }
+  .hero-bg{position:absolute;inset:0;}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;display:block;}
+  .hero-scrim{
+    position:absolute;inset:0;
+    background:
+      linear-gradient(100deg, rgba(37,16,10,.94) 4%, rgba(37,16,10,.86) 34%, rgba(37,16,10,.48) 62%, rgba(37,16,10,.12) 84%),
+      linear-gradient(0deg, rgba(20,9,5,.5), rgba(20,9,5,0) 40%);
+  }
+  .hero-content{
+    position:relative;z-index:2;
+    padding:44px 40px 40px;
+    max-width:660px;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Sans';
+    font-weight:600;
+    font-size:11.5px;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--rose);
+    margin:0 0 12px;
+    display:flex;align-items:center;gap:8px;
+  }
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--rose);opacity:.7;display:inline-block;}
+  .hero h1{
+    font-size:clamp(32px,4.2vw,44px);
+    line-height:1.08;
+    margin:0 0 16px;
+    color:var(--cream);
+  }
+  .hero h1 em{color:#f0c8b8;}
+  .hero p{
+    font-size:14.5px;
+    line-height:1.68;
+    color:#f3e4d8;
+    margin:0 0 10px;
+    max-width:62ch;
+  }
+  .hero p:last-child{margin-bottom:0;}
+  .hero-logo-badge{
+    position:absolute;z-index:3;
+    right:26px;bottom:26px;
+    background:var(--cream-card);
+    border-radius:14px;
+    padding:12px 18px;
+    box-shadow:0 8px 22px rgba(30,12,6,.28);
+  }
+  .hero-logo-badge img{width:132px;height:auto;display:block;}
+
+  /* ---------- quick nav ---------- */
+  .quicknav{
+    display:flex;flex-wrap:wrap;gap:10px;
+    padding-block:22px 6px;
+  }
+  .quicknav a{
+    font-size:12px;font-weight:600;letter-spacing:.03em;
+    color:var(--maroon-dark);text-decoration:none;
+    border:1px solid var(--hair);background:var(--cream-card);
+    border-radius:100px;padding:8px 15px;
+    display:inline-flex;align-items:center;gap:7px;
+    transition:border-color .15s ease;
+  }
+  .quicknav a:hover{border-color:var(--maroon);}
+  .quicknav .n{
+    font-family:'Newsreader';font-style:italic;color:var(--maroon);font-size:12px;
+  }
+
+  /* ---------- legend ---------- */
+  .legend{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 14px;
+    padding:16px 18px;
+    margin-top:8px;
+    font-size:12.5px;
+    color:var(--brown-soft);
+    background:var(--cream-card);
+    border:1px solid var(--hair);
+    border-radius:14px;
+  }
+  .legend-item{display:flex;align-items:center;gap:7px;}
+  .ic{flex-shrink:0;display:inline-flex;}
+  .legend-item .ic{
+    width:22px;height:22px;border-radius:50%;
+    background:var(--rose);color:var(--maroon-dark);
+    align-items:center;justify-content:center;
+  }
+  .legend .rascunho-chip{
+    display:inline-block;
+    font-size:10.5px;
+    font-weight:600;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    color:var(--maroon);
+    border:1px dashed var(--maroon);
+    border-radius:100px;
+    padding:2px 8px;
+  }
+
+  /* ---------- section heads ---------- */
+  .section{padding-block:36px;border-top:1px solid var(--hair);}
+  .section:first-of-type{border-top:none;}
+  .section-head{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:16px;
+    margin-bottom:22px;
+    flex-wrap:wrap;
+  }
+  .section-head .kicker{
+    font-family:'Newsreader';font-style:italic;font-size:14px;color:var(--maroon);
+    margin:0 0 4px;
+  }
+  .section-head h2{
+    font-size:clamp(24px,3vw,30px);
+    margin:0;
+    color:var(--brown);
+  }
+  .section-head .sub{
+    font-size:13.5px;
+    color:var(--brown-soft);
+    max-width:40ch;
+    padding-top:2px;
+  }
+
+  /* ---------- calendar ---------- */
+  .cal-weekdays{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:8px;
+    margin-bottom:8px;
+  }
+  .cal-weekdays span{
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--brown-soft);
+    text-align:center;
+  }
+  .cal-grid{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:8px;
+  }
+  .day{
+    background:var(--cream-card);
+    border:1px solid var(--hair);
+    border-radius:10px;
+    min-height:108px;
+    padding:8px 8px 9px;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+  }
+  .day.empty{background:transparent;border-color:transparent;}
+  .day.blank{background:transparent;border-style:dashed;}
+  .day-num{
+    font-family:'Newsreader';
+    font-weight:500;
+    font-size:16px;
+    color:var(--brown);
+  }
+  .blank .day-num{color:var(--brown-soft);opacity:.55;}
+  .tag{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    font-size:10.3px;
+    line-height:1.25;
+    color:var(--brown);
+  }
+  .tag .ic svg{width:10px;height:10px;}
+  .tag b{font-weight:600;}
+  .tag .ed{color:var(--brown-soft);font-weight:400;}
+  .tag.draft{color:var(--maroon);}
+  .tag.draft .ed{color:var(--maroon);opacity:.75;}
+  .tag.story{color:var(--brown-soft);font-style:italic;}
+  .tag.cmv{color:var(--maroon-dark);font-weight:600;}
+  .day-note{margin-top:auto;font-size:9.5px;color:var(--maroon);letter-spacing:.03em;text-transform:uppercase;font-weight:600;}
+
+  /* ---------- feed grid ---------- */
+  .feed-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(148px,1fr));
+    gap:14px;
+  }
+  .tile{
+    position:relative;
+    aspect-ratio:1/1;
+    border-radius:12px;
+    overflow:hidden;
+    background:var(--cream-card);
+    border:1px solid var(--hair);
+    box-shadow:var(--shadow);
+  }
+  .tile img{
+    width:100%;height:100%;object-fit:cover;display:block;
+  }
+  .tile .overlay{
+    position:absolute;inset:auto 0 0 0;
+    padding:8px 9px 7px;
+    background:linear-gradient(to top, rgba(41,20,10,.82), rgba(41,20,10,0) 88%);
+    color:#fff6ec;
+  }
+  .tile .overlay .d{
+    font-family:'Newsreader';font-size:14px;font-weight:500;
+  }
+  .tile .overlay .f{
+    font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;opacity:.85;
+  }
+  .tile.draft{
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:8px;
+    border:1.5px dashed var(--maroon);
+    background:repeating-linear-gradient(135deg, var(--rose) 0 10px, var(--cream-card) 10px 20px);
+    text-align:center;
+    padding:10px;
+  }
+  .tile.draft .ic svg{width:22px;height:22px;color:var(--maroon);}
+  .tile.draft .d{font-family:'Newsreader';font-size:14px;font-weight:500;color:var(--brown);}
+  .tile.draft .f{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--maroon);}
+  .tile.draft .ed{font-size:10.5px;color:var(--brown-soft);}
+  .tile.draft .chip{
+    font-size:9px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--maroon);border:1px dashed var(--maroon);border-radius:100px;padding:2px 7px;
+  }
+
+  /* ---------- post a post ---------- */
+  .postlist{display:flex;flex-direction:column;gap:16px;}
+  .postcard{
+    display:grid;
+    grid-template-columns:210px 1fr;
+    gap:0;
+    background:var(--cream-card);
+    border:1px solid var(--hair);
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+  }
+  .postcard-media{
+    position:relative;
+    min-height:100%;
+    background:repeating-linear-gradient(135deg, var(--rose) 0 10px, var(--cream-card) 10px 20px);
+  }
+  .postcard-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+  .postcard-media .chip{
+    position:absolute;top:10px;left:10px;z-index:2;
+    font-size:9px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+    color:#fff6ec;background:var(--maroon);border-radius:100px;padding:3px 9px;
+  }
+  .postcard-media.isdraft{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;text-align:center;padding:14px;}
+  .postcard-media.isdraft .ic svg{width:26px;height:26px;color:var(--maroon);}
+  .postcard-media.isdraft span.lbl{font-size:10.5px;color:var(--brown-soft);}
+  .postcard-media.isdraft .chip{position:static;background:transparent;border:1px dashed var(--maroon);color:var(--maroon);}
+
+  /* carousel gallery inside post-a-post card */
+  .car-gallery{
+    display:flex;gap:8px;overflow-x:auto;
+    padding:2px 0 6px;
+    scroll-snap-type:x proximity;
+  }
+  .car-gallery img{
+    scroll-snap-align:start;
+    height:150px;width:auto;border-radius:9px;flex-shrink:0;
+    border:1px solid var(--hair);box-shadow:var(--shadow);
+  }
+  .car-gallery-wrap{margin-top:2px;}
+  .car-gallery-label{
+    font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--brown-soft);
+    margin:0 0 6px;font-weight:600;
+  }
+
+  .postcard-body{padding:18px 22px;display:flex;flex-direction:column;gap:10px;}
+  .postcard-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+  .format-badge{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--maroon-dark);
+  }
+  .format-badge .ic svg{width:12px;height:12px;}
+  .postcard-day{
+    font-family:'Newsreader';font-size:19px;font-weight:500;color:var(--brown);
+  }
+  .postcard-ed{font-size:12.5px;color:var(--brown-soft);}
+  .postcard-cmv{font-size:11.5px;color:var(--maroon-dark);font-weight:600;}
+  .postcard-legenda{
+    font-size:14px;line-height:1.6;color:var(--brown);
+    white-space:pre-line;
+  }
+  .postcard-legenda.placeholder, .postcard-idea{font-size:13px;color:var(--brown-soft);font-style:italic;}
+  .postcard-cta{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px;}
+  .btn{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:12px;font-weight:600;letter-spacing:.02em;
+    padding:8px 13px;border-radius:100px;text-decoration:none;
+    border:1px solid var(--maroon);color:var(--maroon-dark);
+    background:transparent;
+  }
+  .btn.solid{background:var(--maroon);color:#fff6ec;border-color:var(--maroon);}
+  .btn .ic svg{width:12px;height:12px;}
+  .btn.disabled{
+    border-style:dashed;color:var(--brown-soft);border-color:var(--hair);
+    cursor:default;
+  }
+  .story-strip{display:flex;align-items:center;gap:10px;margin-top:2px;}
+  .story-thumb{
+    width:40px;height:64px;border-radius:8px;overflow:hidden;flex-shrink:0;
+    border:1px solid var(--hair);
+  }
+  .story-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+
+  @media (max-width:640px){
+    .postcard{grid-template-columns:1fr;}
+    .postcard-media{aspect-ratio:16/10;min-height:0;}
+  }
+
+  /* ---------- footer ---------- */
+  .footer{
+    padding-top:28px;
+    border-top:1px solid var(--hair);
+    font-size:12.5px;
+    color:var(--brown-soft);
+    display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  }
+
+  @media (max-width:640px){
+    .cal-grid, .cal-weekdays{grid-template-columns:repeat(7,1fr);gap:5px;}
+    .day{min-height:78px;padding:6px 5px 7px;border-radius:7px;}
+    .day-num{font-size:13px;}
+    .tag{font-size:8.6px;gap:3px;}
+    .tag b{display:block;}
+    .tag .ed{display:none;}
+    .hero{min-height:0;border-radius:16px;}
+    .hero-content{padding:30px 20px 88px;max-width:none;}
+    .hero h1{font-size:28px;}
+    .hero-logo-badge{right:16px;bottom:16px;padding:8px 12px;}
+    .hero-logo-badge img{width:92px;}
+    .quicknav{padding-block:16px 4px;}
+    .car-gallery img{height:120px;}
+  }
+
+  /* ---------- month tabs ---------- */
+  .month-tabs{
+    display:flex;flex-wrap:wrap;gap:8px;
+    padding-block:22px 0;
+  }
+  .month-tab{
+    font-family:'Newsreader';font-size:16px;font-weight:500;
+    color:var(--brown-soft);background:transparent;
+    border:none;border-bottom:3px solid transparent;
+    padding:8px 4px 12px;cursor:pointer;
+    transition:color .15s ease, border-color .15s ease;
+  }
+  .month-tab:hover{color:var(--maroon-dark);}
+  .month-tab.active{color:var(--maroon-dark);border-bottom-color:var(--maroon);}
+  .month-panel{display:none;}
+  .month-panel.active{display:block;}
+
+  .empty-month{
+    margin-top:28px;
+    padding:60px 24px;
+    text-align:center;
+    background:var(--cream-card);
+    border:1.5px dashed var(--hair);
+    border-radius:18px;
+    color:var(--brown-soft);
+  }
+  .empty-month .ic svg{width:30px;height:30px;color:var(--maroon);margin-bottom:10px;}
+  .empty-month h3{font-size:20px;margin:0 0 6px;color:var(--brown);}
+  .empty-month p{font-size:13.5px;margin:0;max-width:44ch;margin-inline:auto;}
+
+  /* ---------- resultados do mês ---------- */
+  .test-banner{
+    display:flex;align-items:center;gap:10px;
+    font-size:12.5px;color:var(--maroon-dark);
+    background:var(--rose);border:1px dashed var(--maroon);
+    border-radius:12px;padding:12px 16px;margin-bottom:24px;
+  }
+  .test-banner b{font-weight:700;}
+  .stats-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    margin-bottom:26px;
+  }
+  .stats-card{
+    background:var(--cream-card);
+    border:1px solid var(--hair);
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+  }
+  .stats-card-head{
+    background:var(--maroon);
+    color:var(--cream);
+    font-family:'Newsreader';font-style:italic;font-size:16px;
+    text-align:center;padding:11px 14px;
+  }
+  .stats-row{
+    display:flex;justify-content:space-between;gap:10px;
+    padding:9px 16px;
+    font-size:13px;
+    border-top:1px solid var(--hair);
+  }
+  .stats-card .stats-row:nth-child(even){background:rgba(179,39,60,.04);}
+  .stats-row .k{color:var(--brown-soft);}
+  .stats-row .v{font-weight:600;color:var(--brown);font-variant-numeric:tabular-nums;}
+  .stats-row.highlight .v{color:var(--maroon-dark);}
+
+  .top-block-title{
+    font-family:'Newsreader';font-style:italic;font-size:15px;color:var(--maroon);
+    margin:0 0 12px;
+  }
+  .top-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+    margin-bottom:28px;
+  }
+  .top-card{
+    background:var(--cream-card);
+    border:1px solid var(--hair);
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+  }
+  .top-card-head{
+    background:var(--maroon-dark);
+    color:var(--cream);
+    font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+    text-align:center;padding:9px 10px;
+  }
+  .top-card-tema{
+    background:var(--rose);
+    color:var(--maroon-dark);
+    font-weight:600;font-size:13.5px;
+    text-align:center;padding:10px 12px;
+    border-bottom:1px solid var(--hair);
+  }
+  .top-card .stats-row{padding:8px 14px;font-size:12.5px;}
+  .top-card .stats-row:first-of-type{border-top:none;}
+
+  @media (max-width:760px){
+    .stats-grid{grid-template-columns:1fr;}
+    .top-grid{grid-template-columns:1fr;}
+  }
+</style>
+
+<div class="topbar"></div>
 <div class="wrap">
-  <main class="soon">
-    <a class="crumb" href="/">← Todas as marcas</a><br>
-    <img class="logo" src="/assets/logos/bendito.png" alt="Momento Bendito · Outubro 2026">
-    <span class="badge">Em construção</span>
-    <h1>Momento Bendito · Outubro 2026</h1>
-    <p class="lead" style="margin-inline:auto">O planejamento completo de outubro será publicado aqui em breve.</p>
-  </main>
-  <footer>Grupo Impettus · Planejamentos de conteúdo</footer>
+
+  <nav class="month-tabs" id="month-tabs">
+    <button class="month-tab active" data-month="outubro" type="button">Outubro</button>
+    <button class="month-tab" data-month="novembro" type="button">Novembro</button>
+    <button class="month-tab" data-month="dezembro" type="button">Dezembro</button>
+  </nav>
+
+  <div class="month-panel active" data-month="outubro">
+
+  <header class="hero" id="topo-outubro">
+    <div class="hero-bg"><img src="hero_bg.jpg" alt=""></div>
+    <div class="hero-scrim"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Momento Bendito &middot; Planejamento de conteúdo</p>
+      <h1>Outubro: café para <em>todas as horas</em></h1>
+      <p>Outubro posiciona o Bendito como uma cafeteria de rotina, saindo do lugar de lembrança pontual para presença no dia a dia do consumidor, com foco em se fixar na cabeça do consumidor como &ldquo;cafeteria para todas as horas&rdquo;. A campanha Café para todas as horas estrutura toda a comunicação do mês em três fases: aquecimento com bastidores; lançamento com apresentação dos cinco momentos do dia e fixação do conceito visual; e amplificação com prova social e reforço de hábito &mdash; juntamente com as datas comemorativas do mês.</p>
+      <p>As editorias são distribuídas de forma estratégica: <em>Desejo &amp; Produto</em> e <em>Bastidores &amp; Processo</em> sustentam a construção de apetite e entendimento da campanha; <em>Prova Social &amp; Comunidade</em> ganha força na fase final para validar e ampliar a percepção de hábito; e <em>Engajamento &amp; Trends</em> atua de forma contínua como camada de interação.</p>
+    </div>
+    <div class="hero-logo-badge"><img src="logo.png" alt="Momento Bendito"></div>
+  </header>
+
+  <nav class="quicknav">
+    <a href="#calendario-outubro"><span class="n">01</span> Calendário</a>
+    <a href="#feed-outubro"><span class="n">02</span> Grade do feed</a>
+    <a href="#postaposte-outubro"><span class="n">03</span> Post a post</a>
+    <a href="#resultados-outubro"><span class="n">04</span> Resultados do mês</a>
+  </nav>
+
+  <div class="legend">
+    <span class="legend-item"><span class="ic">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6,4 20,12 6,20" fill="currentColor" stroke="none"/></svg>
+    </span> Reels</span>
+    <span class="legend-item"><span class="ic">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg>
+    </span> Post</span>
+    <span class="legend-item"><span class="ic">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="12" height="12" rx="2"/><rect x="9" y="3" width="12" height="12" rx="2"/></svg>
+    </span> Carrossel</span>
+    <span class="legend-item"><span class="ic">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/></svg>
+    </span> Stories (fora da grade)</span>
+    <span class="legend-item"><span class="rascunho-chip">Rascunho</span> ainda em criação</span>
+  </div>
+
+  <!-- ================= CALENDÁRIO ================= -->
+  <section class="section" id="calendario-outubro">
+    <div class="section-head">
+      <div>
+        <p class="kicker">01 &middot; Visão geral</p>
+        <h2>Calendário &mdash; outubro</h2>
+      </div>
+      <div class="sub">Todo dia com conteúdo mostra o que vai ao ar: formato, editoria e, quando ainda não está pronto, a marca de rascunho.</div>
+    </div>
+
+    <div class="cal-weekdays">
+      <span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span><span>Dom</span>
+    </div>
+
+    <div class="cal-grid">
+      <!-- week 0: pad Mon-Wed -->
+      <div class="day empty"></div><div class="day empty"></div><div class="day empty"></div>
+
+      <!-- 1 Thu -->
+      <div class="day">
+        <div class="day-num">1</div>
+        <div class="tag cmv">☕ Dia Internacional do Café</div>
+        <div class="tag draft"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span><b>Reels</b><span class="ed">· Data comemorativa</span></div>
+        <div class="tag story"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Stories</div>
+      </div>
+      <!-- 2 Fri blank -->
+      <div class="day blank"><div class="day-num">2</div></div>
+      <!-- 3 Sat -->
+      <div class="day">
+        <div class="day-num">3</div>
+        <div class="tag"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span><b>Reels</b><span class="ed">· Lançamento</span></div>
+        <div class="tag story"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Stories</div>
+      </div>
+      <!-- 4 Sun -->
+      <div class="day">
+        <div class="day-num">4</div>
+        <div class="tag draft"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span><b>Reels</b><span class="ed">· Unidade nova</span></div>
+        <div class="tag draft"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span><b>Post</b><span class="ed">· Evento</span></div>
+        <div class="tag story"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Stories</div>
+      </div>
+
+      <!-- week 2: 5 Mon - 11 Sun -->
+      <div class="day blank"><div class="day-num">5</div></div>
+      <div class="day">
+        <div class="day-num">6</div>
+        <div class="tag"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span><b>Reels</b><span class="ed">· Humanização</span></div>
+        <div class="tag story"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Stories</div>
+      </div>
+      <div class="day">
+        <div class="day-num">7</div>
+        <div class="tag"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span><b>Post</b><span class="ed">· Almoço</span></div>
+        <div class="tag story"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Stories</div>
+      </div>
+      <div class="day blank"><div class="day-num">8</div></div>
+      <div class="day">
+        <div class="day-num">9</div>
+        <div class="tag cmv">🍰 Dia da Sobremesa</div>
+        <div class="tag"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span><b>Post</b><span class="ed">· Dia da sobremesa</span></div>
+        <div class="tag story"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Stories</div>
+      </div>
+      <div class="day blank"><div class="day-num">10</div></div>
+      <div class="day">
+        <div class="day-num">11</div>
+        <div class="tag cmv">🍮 Dia do Doce de Leite</div>
+        <div class="tag draft"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span><b>Reels</b><span class="ed">· Doce de leite</span></div>
+        <div class="tag"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span><b>Post</b><span class="ed">· Unidade nova</span></div>
+        <div class="tag story"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Stories</div>
+      </div>
+
+      <!-- week 3: 12-18 -->
+      <div class="day">
+        <div class="day-num">12</div>
+        <div class="tag cmv">🎈 Dia das Crianças</div>
+        <div class="day-note" style="margin-top:2px;">Sem post neste dia</div>
+      </div>
+      <div class="day blank"><div class="day-num">13</div></div>
+      <div class="day">
+        <div class="day-num">14</div>
+        <div class="tag"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="6" width="12" height="12" rx="2"/><rect x="9" y="3" width="12" height="12" rx="2"/></svg></span><b>Carrossel</b><span class="ed">· Happy hour</span></div>
+      </div>
+      <div class="day blank"><div class="day-num">15</div></div>
+      <div class="day">
+        <div class="day-num">16</div>
+        <div class="tag cmv">🥐 Dia do Pão</div>
+        <div class="tag"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span><b>Post</b><span class="ed">· Dia do pão</span></div>
+      </div>
+      <div class="day blank"><div class="day-num">17</div></div>
+      <div class="day">
+        <div class="day-num">18</div>
+        <div class="tag"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="6" width="12" height="12" rx="2"/><rect x="9" y="3" width="12" height="12" rx="2"/></svg></span><b>Carrossel</b><span class="ed">· Unidade nova</span></div>
+        <div class="tag story"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Stories</div>
+      </div>
+
+      <!-- week 4: 19-25 -->
+      <div class="day blank"><div class="day-num">19</div></div>
+      <div class="day">
+        <div class="day-num">20</div>
+        <div class="tag"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span><b>Reels</b><span class="ed">· Produtos</span></div>
+      </div>
+      <div class="day blank"><div class="day-num">21</div></div>
+      <div class="day">
+        <div class="day-num">22</div>
+        <div class="tag"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span><b>Post</b><span class="ed">· Almoço</span></div>
+        <div class="tag story"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Stories</div>
+      </div>
+      <div class="day">
+        <div class="day-num">23</div>
+        <div class="tag"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="6" width="12" height="12" rx="2"/><rect x="9" y="3" width="12" height="12" rx="2"/></svg></span><b>Carrossel</b><span class="ed">· Happy hour</span></div>
+      </div>
+      <div class="day blank"><div class="day-num">24</div></div>
+      <div class="day">
+        <div class="day-num">25</div>
+        <div class="tag"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span><b>Reels</b><span class="ed">· Unidade nova</span></div>
+        <div class="tag story"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Stories</div>
+      </div>
+
+      <!-- week 5: 26-31 -->
+      <div class="day blank"><div class="day-num">26</div></div>
+      <div class="day">
+        <div class="day-num">27</div>
+        <div class="tag"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="6" width="12" height="12" rx="2"/><rect x="9" y="3" width="12" height="12" rx="2"/></svg></span><b>Carrossel</b><span class="ed">· Engajamento</span></div>
+        <div class="tag story"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Stories</div>
+      </div>
+      <div class="day blank"><div class="day-num">28</div></div>
+      <div class="day">
+        <div class="day-num">29</div>
+        <div class="tag"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span><b>Post</b><span class="ed">· Produto</span></div>
+      </div>
+      <div class="day blank"><div class="day-num">30</div></div>
+      <div class="day">
+        <div class="day-num">31</div>
+        <div class="tag"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="6" width="12" height="12" rx="2"/><rect x="9" y="3" width="12" height="12" rx="2"/></svg></span><b>Carrossel</b><span class="ed">· Engajamento</span></div>
+        <div class="tag draft"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span><b>Post</b><span class="ed">· Campanha</span></div>
+        <div class="tag story"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Stories</div>
+      </div>
+      <div class="day empty"></div><div class="day empty"></div><div class="day empty"></div>
+    </div>
+  </section>
+
+  <!-- ================= GRADE DO FEED ================= -->
+  <section class="section" id="feed-outubro">
+    <div class="section-head">
+      <div>
+        <p class="kicker">02 &middot; Perfil</p>
+        <h2>Grade do feed</h2>
+      </div>
+      <div class="sub">Reels, posts e carrosséis na ordem real de publicação &mdash; exatamente como vão aparecer no perfil. Stories não entram aqui, só no calendário acima.</div>
+    </div>
+
+    <div class="feed-grid">
+
+      <div class="tile draft">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polygon points="6,4 20,12 6,20"/></svg></span>
+        <div class="d">01/10</div>
+        <div class="f">Reels</div>
+        <div class="ed">Data comemorativa</div>
+        <span class="chip">Em criação</span>
+      </div>
+
+      <div class="tile"><img src="covers/cover_0306.jpg" alt="Reels 03/10"><div class="overlay"><div class="d">03/10</div><div class="f">Reels &middot; Lançamento</div></div></div>
+
+      <div class="tile draft">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polygon points="6,4 20,12 6,20"/></svg></span>
+        <div class="d">04/10</div>
+        <div class="f">Reels</div>
+        <div class="ed">Unidade nova</div>
+        <span class="chip">Em criação</span>
+      </div>
+
+      <div class="tile draft">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span>
+        <div class="d">04/10</div>
+        <div class="f">Post</div>
+        <div class="ed">Evento Café com Letras</div>
+        <span class="chip">Em criação</span>
+      </div>
+
+      <div class="tile"><img src="covers/cover_0610.jpg" alt="Reels 06/10"><div class="overlay"><div class="d">06/10</div><div class="f">Reels &middot; Humanização</div></div></div>
+
+      <div class="tile"><img src="covers/cover_0710.jpg" alt="Post 07/10"><div class="overlay"><div class="d">07/10</div><div class="f">Post &middot; Almoço</div></div></div>
+
+      <div class="tile"><img src="covers/cover_0910.jpg" alt="Post 09/10"><div class="overlay"><div class="d">09/10</div><div class="f">Post &middot; Dia da sobremesa</div></div></div>
+
+      <div class="tile draft">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polygon points="6,4 20,12 6,20"/></svg></span>
+        <div class="d">11/10</div>
+        <div class="f">Reels</div>
+        <div class="ed">Dia do doce de leite</div>
+        <span class="chip">Em criação</span>
+      </div>
+
+      <div class="tile"><img src="covers/cover_1110_a.jpg" alt="Post 11/10"><div class="overlay"><div class="d">11/10</div><div class="f">Post &middot; Unidade nova</div></div></div>
+
+      <div class="tile"><img src="covers/cover_1410.jpg" alt="Carrossel 14/10"><div class="overlay"><div class="d">14/10</div><div class="f">Carrossel &middot; Happy hour</div></div></div>
+
+      <div class="tile"><img src="covers/cover_1610.jpg" alt="Post 16/10"><div class="overlay"><div class="d">16/10</div><div class="f">Post &middot; Dia do pão</div></div></div>
+
+      <div class="tile"><img src="covers/cover_1810.jpg" alt="Carrossel 18/10"><div class="overlay"><div class="d">18/10</div><div class="f">Carrossel &middot; Unidade nova</div></div></div>
+
+      <div class="tile"><img src="covers/cover_2010.jpg" alt="Reels 20/10"><div class="overlay"><div class="d">20/10</div><div class="f">Reels &middot; Produtos</div></div></div>
+
+      <div class="tile"><img src="covers/cover_2210.jpg" alt="Post 22/10"><div class="overlay"><div class="d">22/10</div><div class="f">Post &middot; Almoço</div></div></div>
+
+      <div class="tile"><img src="covers/cover_2310.jpg" alt="Carrossel 23/10"><div class="overlay"><div class="d">23/10</div><div class="f">Carrossel &middot; Happy hour</div></div></div>
+
+      <div class="tile"><img src="covers/cover_2510.jpg" alt="Reels 25/10"><div class="overlay"><div class="d">25/10</div><div class="f">Reels &middot; Unidade nova</div></div></div>
+
+      <div class="tile"><img src="covers/cover_2710.jpg" alt="Carrossel 27/10"><div class="overlay"><div class="d">27/10</div><div class="f">Carrossel &middot; Engajamento</div></div></div>
+
+      <div class="tile"><img src="covers/cover_2910.jpg" alt="Post 29/10"><div class="overlay"><div class="d">29/10</div><div class="f">Post &middot; Produto</div></div></div>
+
+      <div class="tile"><img src="covers/cover_3110.jpg" alt="Carrossel 31/10"><div class="overlay"><div class="d">31/10</div><div class="f">Carrossel &middot; Engajamento</div></div></div>
+
+      <div class="tile draft">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span>
+        <div class="d">31/10</div>
+        <div class="f">Post</div>
+        <div class="ed">Campanha &middot; Natal</div>
+        <span class="chip">Em criação</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= POST A POST ================= -->
+  <section class="section" id="postaposte-outubro">
+    <div class="section-head">
+      <div>
+        <p class="kicker">03 &middot; Em detalhe</p>
+        <h2>Post a post</h2>
+      </div>
+      <div class="sub">Cada publicação do mês em detalhe — legenda completa, editoria, capa e o material de origem. Veja as telas do carrossel, assista ao vídeo ou abra os stories do dia direto do Drive.</div>
+    </div>
+
+    <div class="postlist">
+      <article class="postcard">
+        <div class="postcard-media isdraft"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span><span class="lbl">Capa ainda não definida</span><span class="chip">Em criação</span></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span>Reels</span>
+            <span class="postcard-day">01/10 &middot; Quinta 10h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Data comemorativa</div>
+          <div class="postcard-cmv">☕ Dia Internacional do Café</div>
+          <div class="postcard-legenda">De Segunda a Segunda tem coisa que não muda, o cafezinho. E no Momento Bendito não poderíamos deixar de celebrar esse dia!</div>
+          <div class="postcard-cta"><span class="btn disabled"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6,4 20,12 6,20"/></svg></span>Material ainda não disponível</span></div>
+          
+          <div class="story-strip"><div class="story-thumb"><img src="stories/story_0110.jpg" alt="Story do dia 01/10"></div><a class="btn" href="https://drive.google.com/drive/folders/1vyWo40gFsWwHbOIyZ4NisBsA5QUk0JUg?usp=drive_link" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Ver stories do dia</a></div>
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media"><span class="chip">Reels</span><img src="covers/cover_0306.jpg" alt="Reels 03/10"></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span>Reels</span>
+            <span class="postcard-day">03/10 &middot; Sábado 10h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Lançamento cafeteria</div>
+          
+          <div class="postcard-legenda">O Momento Bendito virou a cafeteria pra todas as horas. Aquele café que você já ama continua igualzinho, só que agora com um motivo novo pra aparecer em cada parte do seu dia: de manhã, no trabalho, no almoço, na pausa da tarde e até quando o seu dia já tá acabando…
+
+A gente sempre foi essa casa que te recebe bem! Só faltava contar pra você que ela também é sua companhia em qualquer hora que bater a vontade.
+
+Vem descobrir o seu momento favorito 🤎</div>
+          <div class="postcard-cta"><a class="btn solid" href="https://drive.google.com/file/d/1OEpE_jboPuLaD0RwxztqsaFYVxNgvcWe/view?usp=drive_link" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6,4 20,12 6,20"/></svg></span>Assistir material</a></div>
+          
+          <div class="story-strip"><div class="story-thumb"><img src="stories/story_0310.jpg" alt="Story do dia 03/10"></div><a class="btn" href="https://drive.google.com/drive/folders/1OYKKpLb3Tfl5x1XjTg3idh6-lL7DyS_K" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Ver stories do dia</a></div>
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media isdraft"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span><span class="lbl">Capa ainda não definida</span><span class="chip">Em criação</span></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span>Reels</span>
+            <span class="postcard-day">04/10 &middot; Domingo 10h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Unidade nova</div>
+          
+          <div class="postcard-idea">Ideia: reforçar a nova unidade Bendito Orla Copa com um vídeo falado sobre a collab.</div>
+          <div class="postcard-cta"><span class="btn disabled"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6,4 20,12 6,20"/></svg></span>Material ainda não disponível</span></div>
+          
+          <div class="story-strip"><div class="story-thumb"><img src="stories/story_0410.jpg" alt="Story do dia 04/10"></div><a class="btn" href="https://drive.google.com/drive/folders/1VweBquA55gno_pJCfZJdOO5A6qc70HPq" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Ver stories do dia</a></div>
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media isdraft"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span><span class="lbl">Capa ainda não definida</span><span class="chip">Em criação</span></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span>Post</span>
+            <span class="postcard-day">04/10 &middot; Domingo 17h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Divulgação evento Café com Letras</div>
+          
+          <div class="postcard-idea">Divulgação do evento Café com Letras — legenda em definição junto à organização do evento.</div>
+          <div class="postcard-cta"><span class="btn disabled"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6,4 20,12 6,20"/></svg></span>Material ainda não disponível</span></div>
+          
+          <div class="story-strip"><div class="story-thumb"><img src="stories/story_0410.jpg" alt="Story do dia 04/10"></div><a class="btn" href="https://drive.google.com/drive/folders/1VweBquA55gno_pJCfZJdOO5A6qc70HPq" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Ver stories do dia</a></div>
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media"><span class="chip">Reels</span><img src="covers/cover_0610.jpg" alt="Reels 06/10"></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span>Reels</span>
+            <span class="postcard-day">06/10 &middot; Terça 12h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Humanização</div>
+          
+          <div class="postcard-legenda">Aqui a combinação perfeita tem nome e sobrenome: nuvem de queijo Gruyère e cafezinho para uma tarde perfeita ☕❤️</div>
+          <div class="postcard-cta"><a class="btn solid" href="https://drive.google.com/file/d/1Vw2q5Y9tf7X_HwL6R7JSt2WmMlB2DfdG/view?usp=drive_link" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6,4 20,12 6,20"/></svg></span>Assistir material</a></div>
+          
+          <div class="story-strip"><div class="story-thumb"><img src="stories/story_0610.jpg" alt="Story do dia 06/10"></div><a class="btn" href="https://drive.google.com/drive/folders/1YfYkjG-zkVIb6bUhrx9pzjRgxX12mZSX?usp=drive_link" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Ver stories do dia</a></div>
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media"><span class="chip">Post</span><img src="covers/cover_0710.jpg" alt="Post 07/10"></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span>Post</span>
+            <span class="postcard-day">07/10 &middot; Quarta 10h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Almoço</div>
+          
+          <div class="postcard-legenda">Já são meio-dia e aquele prato saboroso e saudável te chamando? 🍽️☕
+É exatamente isso que rola aqui no Momento Bendito.
+
+Um prato com cara de comida de casa, um café passadinho na hora pra fechar com chave de ouro e aquele cantinho gostoso pra você respirar um pouco antes de voltar pra correria!
+
+Bora almoçar com a gente hoje?</div>
+          <div class="postcard-cta"><a class="btn solid" href="https://drive.google.com/file/d/1pkqIcLY08SzKcjqXU4jazvsL7GeBZh9x/view?usp=drive_link" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6,4 20,12 6,20"/></svg></span>Assistir material</a></div>
+          
+          <div class="story-strip"><div class="story-thumb"><img src="stories/story_0710.jpg" alt="Story do dia 07/10"></div><a class="btn" href="https://drive.google.com/drive/folders/1dnYuep9kEFjSsXl1m93aNvm__GCgkc2q?usp=drive_link" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Ver stories do dia</a></div>
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media"><span class="chip">Post</span><img src="covers/cover_0910.jpg" alt="Post 09/10"></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span>Post</span>
+            <span class="postcard-day">09/10 &middot; Sexta 09h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Dia da sobremesa</div>
+          <div class="postcard-cmv">🍰 Dia da Sobremesa</div>
+          <div class="postcard-legenda">A melhor maneira de aproveitar o Dia da Sobremesa: vindo no Momento Bendito mais próximo a pedindo o seu docinho favorito. A gente espera você ✨</div>
+          <div class="postcard-cta"><a class="btn solid" href="https://drive.google.com/file/d/1_7VPojRrgaNXq3DPvkzBeVCrgAybqOs1/view?usp=drive_link" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6,4 20,12 6,20"/></svg></span>Assistir material</a></div>
+          
+          <div class="story-strip"><div class="story-thumb"><img src="stories/story_0910.jpg" alt="Story do dia 09/10"></div><a class="btn" href="https://drive.google.com/drive/folders/1ed-476qV1Q75V8oe6GrpO2Q2AM4-aP4R?usp=drive_link" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Ver stories do dia</a></div>
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media"><span class="chip">Post</span><img src="covers/cover_1110_a.jpg" alt="Post 11/10"></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span>Post</span>
+            <span class="postcard-day">11/10 &middot; Domingo 12h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Unidade nova</div>
+          <div class="postcard-cmv">🍮 Dia do Doce de Leite</div>
+          <div class="postcard-legenda">Café da manhã com vista pra praia, quem diria 🌊☕
+O Momento Bendito chegou em Copacabana pra provar que o dia fica melhor quando começa devagar e com um café reforçado.
+
+Um cardápio versátil e opções que conquistam (é sério)!
+
+A gente garante, você vai querer voltar! Envia esse post para quem amaria vir com você <3</div>
+          <div class="postcard-cta"><a class="btn solid" href="https://drive.google.com/file/d/1_7VPojRrgaNXq3DPvkzBeVCrgAybqOs1/view?usp=drive_link" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6,4 20,12 6,20"/></svg></span>Assistir material</a></div>
+          
+          <div class="story-strip"><div class="story-thumb"><img src="stories/story_1110.jpg" alt="Story do dia 11/10"></div><a class="btn" href="https://drive.google.com/drive/folders/1bHJAuHp_m8YEu2MUm5xhSqKSczr6F8-x?usp=drive_link" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Ver stories do dia</a></div>
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media isdraft"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span><span class="lbl">Capa ainda não definida</span><span class="chip">Em criação</span></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span>Reels</span>
+            <span class="postcard-day">11/10 &middot; Domingo 10h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Dia do doce de leite</div>
+          <div class="postcard-cmv">🍮 Dia do Doce de Leite</div>
+          <div class="postcard-idea">Roteiro ainda em definição para o Dia do Doce de Leite.</div>
+          <div class="postcard-cta"><span class="btn disabled"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6,4 20,12 6,20"/></svg></span>Material ainda não disponível</span></div>
+          
+          <div class="story-strip"><div class="story-thumb"><img src="stories/story_1110.jpg" alt="Story do dia 11/10"></div><a class="btn" href="https://drive.google.com/drive/folders/1bHJAuHp_m8YEu2MUm5xhSqKSczr6F8-x?usp=drive_link" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Ver stories do dia</a></div>
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media"><span class="chip">Carrossel &middot; 3 telas</span><img src="carrossel/car_1410_1.jpg" alt="Carrossel 14/10"></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="6" width="12" height="12" rx="2"/><rect x="9" y="3" width="12" height="12" rx="2"/></svg></span>Carrossel</span>
+            <span class="postcard-day">14/10 &middot; Quarta 12h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Happy hour</div>
+          
+          <div class="postcard-legenda">Às vezes, tudo que você precisa é um cantinho confortável e uma boa companhia ☕✨
+O Bendito pode ser esse lugar 🤍
+Por aqui, cada detalhe é pensado pra você desacelerar e aproveitar, com atendimento de verdade e produtos feitos com cuidado 🍰
+
+No fim, quem dita o ritmo é você. A qualquer hora do dia ⏰</div>
+          
+          <div class="car-gallery-wrap"><p class="car-gallery-label">Todas as 3 telas do carrossel</p><div class="car-gallery"><img src="carrossel/car_1410_1.jpg" alt="Tela 1 do carrossel 14/10" loading="lazy"><img src="carrossel/car_1410_2.jpg" alt="Tela 2 do carrossel 14/10" loading="lazy"><img src="carrossel/car_1410_3.jpg" alt="Tela 3 do carrossel 14/10" loading="lazy"></div></div>
+          
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media"><span class="chip">Post</span><img src="covers/cover_1610.jpg" alt="Post 16/10"></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span>Post</span>
+            <span class="postcard-day">16/10 &middot; Sexta 10h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Dia do pão</div>
+          <div class="postcard-cmv">🥐 Dia do Pão</div>
+          <div class="postcard-legenda">Se você é fã de um pãozinho, no dia dele nós te damos 3 motivos para comemorar do jeito certo! ✨
+
+Envia esse post para quem vem com você -></div>
+          <div class="postcard-cta"><span class="btn disabled"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6,4 20,12 6,20"/></svg></span>Material ainda não disponível</span></div>
+          
+          
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media"><span class="chip">Carrossel &middot; 3 telas</span><img src="carrossel/car_1810_1.jpg" alt="Carrossel 18/10"></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="6" width="12" height="12" rx="2"/><rect x="9" y="3" width="12" height="12" rx="2"/></svg></span>Carrossel</span>
+            <span class="postcard-day">18/10 &middot; Domingo 12h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Unidade nova</div>
+          
+          <div class="postcard-legenda">Top 3 sensações da vida: café da manhã diferente, vista pro mar e a companhia certa do seu lado ☕🌊
+
+No Momento Bendito Orla Copacabana as três acontecem juntas. Sanduíches quentinhos, café fresco e aquele clima de começar o dia com calma, de frente pra praia.
+
+Bora testar essa combinação?</div>
+          
+          <div class="car-gallery-wrap"><p class="car-gallery-label">Todas as 3 telas do carrossel</p><div class="car-gallery"><img src="carrossel/car_1810_1.jpg" alt="Tela 1 do carrossel 18/10" loading="lazy"><img src="carrossel/car_1810_2.jpg" alt="Tela 2 do carrossel 18/10" loading="lazy"><img src="carrossel/car_1810_3.jpg" alt="Tela 3 do carrossel 18/10" loading="lazy"></div></div>
+          <div class="story-strip"><div class="story-thumb"><img src="stories/story_1810.jpg" alt="Story do dia 18/10"></div><a class="btn" href="https://drive.google.com/drive/folders/1L3WtDelvJ3ayjNG2g4EmE80Z7ODM2qOt" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Ver stories do dia</a></div>
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media"><span class="chip">Reels</span><img src="covers/cover_2010.jpg" alt="Reels 20/10"></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span>Reels</span>
+            <span class="postcard-day">20/10 &middot; Terça 10h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Produtos</div>
+          
+          <div class="postcard-legenda">Era só uma passadinha rápida… até você lembrar que no Momento Bendito sempre cabe mais um pedido. 🤎
+
+Marca aqui nos comentários a sua dupla que sempre fala “vamos lá beber só um cafezinho”. 👀</div>
+          <div class="postcard-cta"><span class="btn disabled"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6,4 20,12 6,20"/></svg></span>Material ainda não disponível</span></div>
+          
+          
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media"><span class="chip">Post</span><img src="covers/cover_2210.jpg" alt="Post 22/10"></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span>Post</span>
+            <span class="postcard-day">22/10 &middot; Quinta 10h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Almoço</div>
+          
+          <div class="postcard-legenda">A experiência de um almoço com o sabor que você merece! 🤎</div>
+          <div class="postcard-cta"><span class="btn disabled"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6,4 20,12 6,20"/></svg></span>Material ainda não disponível</span></div>
+          
+          <div class="story-strip"><div class="story-thumb"><img src="stories/story_2210.jpg" alt="Story do dia 22/10"></div><a class="btn" href="https://drive.google.com/drive/folders/1I09_Te44IItvb92ZFTrCju59mlxRgg56" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Ver stories do dia</a></div>
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media"><span class="chip">Carrossel &middot; 2 telas</span><img src="carrossel/car_2310_1.jpg" alt="Carrossel 23/10"></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="6" width="12" height="12" rx="2"/><rect x="9" y="3" width="12" height="12" rx="2"/></svg></span>Carrossel</span>
+            <span class="postcard-day">23/10 &middot; Sexta 12h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Happy Hour</div>
+          
+          <div class="postcard-legenda">No happy hour do Momento Bendito, você escolhe o clima 🍷🍺
+
+Pode ser um vinho pra desacelerar ou uma cerveja pra brindar o dia ✨
+
+Um ambiente leve, boa companhia e aquele convite pra ficar mais um pouco…
+
+Porque tem horas que pedem só isso: um brinde e um momento compartilhado 🤍</div>
+          
+          <div class="car-gallery-wrap"><p class="car-gallery-label">Todas as 2 telas do carrossel</p><div class="car-gallery"><img src="carrossel/car_2310_1.jpg" alt="Tela 1 do carrossel 23/10" loading="lazy"><img src="carrossel/car_2310_2.jpg" alt="Tela 2 do carrossel 23/10" loading="lazy"></div></div>
+          
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media"><span class="chip">Reels</span><img src="covers/cover_2510.jpg" alt="Reels 25/10"></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span>Reels</span>
+            <span class="postcard-day">25/10 &middot; Domingo 12h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Unidade nova</div>
+          
+          <div class="postcard-legenda">Oito da manhã em Copacabana, com o mar pertinho… deu para sentir daí?
+
+O Momento Bendito chegou perto da praia, e o café da manhã ganhou uma vista nova. Nuvem de queijo quentinha, café passado na hora e aquele clima gostoso de começar o dia sem pressa. Sozinho ou acompanhado, do jeito que fizer mais sentido pra você!
+
+Vem tomar o seu com vista pro mar e boa companhia 🥐</div>
+          <div class="postcard-cta"><a class="btn solid" href="https://drive.google.com/file/d/1vFvrdnX5JbTFX8XL42R3uNtLiTKe1P3-/view?usp=sharing" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6,4 20,12 6,20"/></svg></span>Assistir material</a></div>
+          
+          <div class="story-strip"><div class="story-thumb"><img src="stories/story_2510.jpg" alt="Story do dia 25/10"></div><a class="btn" href="https://drive.google.com/drive/folders/1v9udL65HaX9BLpGEZYnVHalTqeZvBolr" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Ver stories do dia</a></div>
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media"><span class="chip">Carrossel &middot; 5 telas</span><img src="carrossel/car_2710_1.jpg" alt="Carrossel 27/10"></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="6" width="12" height="12" rx="2"/><rect x="9" y="3" width="12" height="12" rx="2"/></svg></span>Carrossel</span>
+            <span class="postcard-day">27/10 &middot; Terça 12h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Engajamento</div>
+          
+          <div class="postcard-legenda">Mil vezes sim!!!! ✨
+
+Tem dias que pedem escolhas leves, sem culpa e sem pressa!
+
+No fim, fica difícil dizer “não” pra tudo isso, né? 😮‍💨💓</div>
+          
+          <div class="car-gallery-wrap"><p class="car-gallery-label">Todas as 5 telas do carrossel</p><div class="car-gallery"><img src="carrossel/car_2710_1.jpg" alt="Tela 1 do carrossel 27/10" loading="lazy"><img src="carrossel/car_2710_2.jpg" alt="Tela 2 do carrossel 27/10" loading="lazy"><img src="carrossel/car_2710_3.jpg" alt="Tela 3 do carrossel 27/10" loading="lazy"><img src="carrossel/car_2710_4.jpg" alt="Tela 4 do carrossel 27/10" loading="lazy"><img src="carrossel/car_2710_5.jpg" alt="Tela 5 do carrossel 27/10" loading="lazy"></div></div>
+          <div class="story-strip"><div class="story-thumb"><img src="stories/story_2710.jpg" alt="Story do dia 27/10"></div><a class="btn" href="https://drive.google.com/drive/folders/1GX06C8lhxqdBGF8TjQsto-fOwm7flIC0?usp=drive_link" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Ver stories do dia</a></div>
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media"><span class="chip">Post</span><img src="covers/cover_2910.jpg" alt="Post 29/10"></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span>Post</span>
+            <span class="postcard-day">29/10 &middot; Quinta 17h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Produto</div>
+          
+          <div class="postcard-legenda">Combinação perfeita: um café + trio de nuvem. ☕
+
+Passe no Bendito e aproveite o seu.</div>
+          <div class="postcard-cta"><span class="btn disabled"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6,4 20,12 6,20"/></svg></span>Material ainda não disponível</span></div>
+          
+          
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media"><span class="chip">Carrossel &middot; 2 telas</span><img src="carrossel/car_3110_1.jpg" alt="Carrossel 31/10"></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="6" width="12" height="12" rx="2"/><rect x="9" y="3" width="12" height="12" rx="2"/></svg></span>Carrossel</span>
+            <span class="postcard-day">31/10 &middot; Sábado 12h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Engajamento</div>
+          
+          <div class="postcard-legenda">Um guia de utilidade (e felicidade) pública: onde tem Momento Bendito ✨💕
+
+Passa pro lado, escolhe seu destino e salva pra escolher depois. →</div>
+          
+          <div class="car-gallery-wrap"><p class="car-gallery-label">Todas as 2 telas do carrossel</p><div class="car-gallery"><img src="carrossel/car_3110_1.jpg" alt="Tela 1 do carrossel 31/10" loading="lazy"><img src="carrossel/car_3110_2.jpg" alt="Tela 2 do carrossel 31/10" loading="lazy"></div></div>
+          <div class="story-strip"><div class="story-thumb"><img src="stories/story_3110.jpg" alt="Story do dia 31/10"></div><a class="btn" href="https://drive.google.com/drive/folders/1r8fwSfui0g9TFviOJtlsM731zjfUDcEe" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Ver stories do dia</a></div>
+        </div>
+      </article>
+
+      <article class="postcard">
+        <div class="postcard-media isdraft"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span><span class="lbl">Capa ainda não definida</span><span class="chip">Em criação</span></div>
+        <div class="postcard-body">
+          <div class="postcard-top">
+            <span class="format-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span>Post</span>
+            <span class="postcard-day">31/10 &middot; Sábado 12h</span>
+          </div>
+          <div class="postcard-ed">Editoria: Campanha · Natal</div>
+          
+          <div class="postcard-idea">Ideia: começar a falar sobre produtos de Natal.</div>
+          <div class="postcard-cta"><span class="btn disabled"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6,4 20,12 6,20"/></svg></span>Material ainda não disponível</span></div>
+          
+          <div class="story-strip"><div class="story-thumb"><img src="stories/story_3110.jpg" alt="Story do dia 31/10"></div><a class="btn" href="https://drive.google.com/drive/folders/1r8fwSfui0g9TFviOJtlsM731zjfUDcEe" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/></svg></span>Ver stories do dia</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= RESULTADOS DO MÊS ================= -->
+  <section class="section" id="resultados-outubro">
+    <div class="section-head">
+      <div>
+        <p class="kicker">04 &middot; Performance</p>
+        <h2>Resultados do mês</h2>
+      </div>
+      <div class="sub">Panorama geral da página e os destaques de reels e posts do período.</div>
+    </div>
+
+    <div class="test-banner">🧪 <span><b>Modelo do layout</b> &mdash; outubro ainda não começou, então os números estão zerados. Assim que os dados reais chegarem (a partir de 06/10), é só substituir aqui.</span></div>
+
+    <div class="stats-grid">
+      <div class="stats-card">
+        <div class="stats-card-head">outubro/26</div>
+        <div class="stats-row"><span class="k">N&deg; seguidores início do período</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">N&deg; seguidores fim do período</span><span class="v">0</span></div>
+        <div class="stats-row highlight"><span class="k">Total Seguidores</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Ganho</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Perda</span><span class="v">0</span></div>
+        <div class="stats-row highlight"><span class="k">Taxa de Crescimento</span><span class="v">0%</span></div>
+        <div class="stats-row"><span class="k">Contas Alcançadas</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Visualizações</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Visitas ao Perfil</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Engajamento</span><span class="v">0</span></div>
+      </div>
+      <div class="stats-card">
+        <div class="stats-card-head">Reels &amp; Posts</div>
+        <div class="stats-row"><span class="k">QQ de Reels</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Total de Visualizações (Reels)</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Média de Visualizações Reels</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">QQ de Posts</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Média Visualizações Posts</span><span class="v">0</span></div>
+      </div>
+    </div>
+
+    <p class="top-block-title">Top Reels</p>
+    <div class="top-grid">
+      <div class="top-card">
+        <div class="top-card-head">1&ordm; lugar</div>
+        <div class="top-card-tema">Tema a definir</div>
+        <div class="stats-row"><span class="k">Total Visualizações</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Alcance</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Interações</span><span class="v">0</span></div>
+      </div>
+      <div class="top-card">
+        <div class="top-card-head">2&ordm; lugar</div>
+        <div class="top-card-tema">Tema a definir</div>
+        <div class="stats-row"><span class="k">Total Visualizações</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Alcance</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Interações</span><span class="v">0</span></div>
+      </div>
+      <div class="top-card">
+        <div class="top-card-head">3&ordm; lugar</div>
+        <div class="top-card-tema">Tema a definir</div>
+        <div class="stats-row"><span class="k">Total Visualizações</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Alcance</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Interações</span><span class="v">0</span></div>
+      </div>
+    </div>
+
+    <p class="top-block-title">Top Posts</p>
+    <div class="top-grid">
+      <div class="top-card">
+        <div class="top-card-head">1&ordm; lugar</div>
+        <div class="top-card-tema">Tema a definir</div>
+        <div class="stats-row"><span class="k">Total Visualizações</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Alcance</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Interações</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Novos Seguidores</span><span class="v">0</span></div>
+      </div>
+      <div class="top-card">
+        <div class="top-card-head">2&ordm; lugar</div>
+        <div class="top-card-tema">Tema a definir</div>
+        <div class="stats-row"><span class="k">Total Visualizações</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Alcance</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Interações</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Novos Seguidores</span><span class="v">0</span></div>
+      </div>
+      <div class="top-card">
+        <div class="top-card-head">3&ordm; lugar</div>
+        <div class="top-card-tema">Tema a definir</div>
+        <div class="stats-row"><span class="k">Total Visualizações</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Alcance</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Interações</span><span class="v">0</span></div>
+        <div class="stats-row"><span class="k">Novos Seguidores</span><span class="v">0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <span>Momento Bendito &middot; Planejamento de outubro</span>
+    <span>20 publicações no feed · 15 já com capa definida · 5 em criação</span>
+  </div>
+
+  </div>
+
+  <div class="month-panel" data-month="novembro">
+    <div class="empty-month">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg></span>
+      <h3>Novembro ainda não chegou por aqui</h3>
+      <p>Assim que o planejamento de novembro estiver pronto, ele entra nesta aba &mdash; mesmo link, mesmo lugar.</p>
+    </div>
+  </div>
+
+  <div class="month-panel" data-month="dezembro">
+    <div class="empty-month">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg></span>
+      <h3>Dezembro ainda não chegou por aqui</h3>
+      <p>Assim que o planejamento de dezembro estiver pronto, ele entra nesta aba &mdash; mesmo link, mesmo lugar.</p>
+    </div>
+  </div>
+
 </div>
-</body>
-</html>
+
+<script>
+  (function(){
+    var tabs = document.querySelectorAll('.month-tab');
+    var panels = document.querySelectorAll('.month-panel');
+    tabs.forEach(function(tab){
+      tab.addEventListener('click', function(){
+        var month = tab.getAttribute('data-month');
+        tabs.forEach(function(t){ t.classList.toggle('active', t === tab); });
+        panels.forEach(function(p){ p.classList.toggle('active', p.getAttribute('data-month') === month); });
+        window.scrollTo({top:0, behavior:'smooth'});
+      });
+    });
+  })();
+</script>
+
+</body></html>
