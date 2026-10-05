@@ -34,6 +34,8 @@ Os links entre páginas usam caminhos absolutos (`/bendito/`, `/assets/...`) no 
 
 **Portal e demais marcas** (apenas cor de acento nos cards): Espetto Carioca `#e59500`, Seu Rufino `#1b3a6b`, Sirène azul-petróleo `#0e6e7e` (logo amarelo sobre fundo petróleo). O portal usa Newsreader + IBM Plex Sans e tema claro/escuro automático.
 
+**Fundos fotográficos do portal:** a home e as páginas de cada marca (lista de meses / "em construção") têm foto de fundo com véu escuro. As fotos ficam em `assets/fundos/` (`home.webp`, `<marca>.jpg`) e são ligadas no `site.css` pelas classes `body.home` e `body.bg-<marca>` (a página da marca usa `class="b-<marca> brand-bg bg-<marca>"` no `<body>`). Para trocar uma foto, substitua o arquivo mantendo o nome. Isso **não** se aplica às páginas de mês, que têm visual próprio.
+
 ## Anatomia da página de mês
 
 Todas têm 4 seções, nesta ordem (os links do menu apontam para esses IDs):

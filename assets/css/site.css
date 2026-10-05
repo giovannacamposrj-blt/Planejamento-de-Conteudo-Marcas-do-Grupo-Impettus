@@ -66,14 +66,30 @@ h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.05; }
 .soon .badge { display: inline-block; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); border-radius: 99px; padding: 4px 12px; margin-bottom: 16px; }
 footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; padding: 20px 0 32px; }
 
-/* Home: foto de fundo com véu escuro para manter o texto legível */
-body.home {
-  background: linear-gradient(rgba(20,16,12,.72), rgba(20,16,12,.80)), url("/assets/fundo-home.webp") center / cover fixed no-repeat;
-  min-height: 100vh;
+/* Foto de fundo com véu escuro (home e páginas das marcas).
+   O fundo vai num ::before fixo: funciona também no celular, onde "background-attachment: fixed" é ignorado. */
+body.home, body.brand-bg { background: #17140f; min-height: 100vh; }
+body.home::before, body.brand-bg::before {
+  content: ""; position: fixed; inset: 0; z-index: -1;
+  background: linear-gradient(rgba(20,16,12,.72), rgba(20,16,12,.82)), var(--fundo) center 35% / cover no-repeat;
 }
-body.home header.top { text-align: center; }
-body.home header.top img { margin-inline: auto; background: #fff; padding: 4px 8px; }
-body.home h1 { color: #fff; }
-body.home .lead { color: #e6dfd5; margin-inline: auto; }
-body.home footer { color: #cfc6ba; border-top-color: rgba(255,255,255,.2); text-align: center; }
+body.home { --fundo: url("/assets/fundos/home.webp"); }
+body.brand-bg::before { background: linear-gradient(rgba(20,16,12,.55), rgba(20,16,12,.72)), var(--fundo) center 30% / cover no-repeat; }
+body.bg-bendito { --fundo: url("/assets/fundos/bendito.jpg"); }
+body.bg-mane { --fundo: url("/assets/fundos/mane.jpg"); }
+body.bg-espetto-carioca { --fundo: url("/assets/fundos/espetto-carioca.jpg"); }
+body.bg-seu-rufino { --fundo: url("/assets/fundos/seu-rufino.jpg"); }
+body.bg-sirene { --fundo: url("/assets/fundos/sirene.jpg"); }
+
+body.home header.top, body.brand-bg header.top { text-align: center; }
+body.home header.top img, body.brand-bg header.top img { margin-inline: auto; background: #fff; padding: 4px 8px; }
+body.brand-bg header.top img.brandlogo { height: 72px; padding: 8px 16px; border-radius: 10px; margin-bottom: 20px; }
+body.home h1, body.brand-bg h1, body.brand-bg .soon h1 { color: #fff; }
+body.home .lead, body.brand-bg .lead { color: #e6dfd5; margin-inline: auto; }
+body.brand-bg .crumb { color: #d8cfc3; }
+body.brand-bg .crumb:hover { color: #fff; }
+body.home footer, body.brand-bg footer { color: #cfc6ba; border-top-color: rgba(255,255,255,.2); text-align: center; }
 body.home .card { border-color: transparent; box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+body.brand-bg .months { max-width: 720px; margin-inline: auto; }
+body.brand-bg .months a { box-shadow: 0 8px 24px rgba(0,0,0,.35); border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; }
+body.brand-bg .soon .badge { color: #fff; border-color: rgba(255,255,255,.7); }
