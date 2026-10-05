@@ -28,8 +28,9 @@ h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.05; }
 .crumb:hover { color: var(--ink); }
 
 /* Cards das marcas */
-.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); padding: 16px 0 64px; }
+.grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 16px 0 64px; }
 .card {
+  flex: 0 1 320px; max-width: 100%;
   display: flex; flex-direction: column; background: var(--card);
   border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
   transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
@@ -64,6 +65,15 @@ h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.05; }
 .soon .logo { max-width: 260px; max-height: 120px; margin: 0 auto 28px; display: block; background: #fff; border-radius: 10px; padding: 12px; }
 .soon .badge { display: inline-block; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); border-radius: 99px; padding: 4px 12px; margin-bottom: 16px; }
 footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; padding: 20px 0 32px; }
-.card .logo.dark, .soon .logo.dark { background: #0e6e7e; }
-.soon .logo.dark { max-width: 200px; padding: 20px; }
-.card .logo.dark img { max-height: 100px; }
+
+/* Home: foto de fundo com véu escuro para manter o texto legível */
+body.home {
+  background: linear-gradient(rgba(20,16,12,.72), rgba(20,16,12,.80)), url("/assets/fundo-home.webp") center / cover fixed no-repeat;
+  min-height: 100vh;
+}
+body.home header.top { text-align: center; }
+body.home header.top img { margin-inline: auto; background: #fff; padding: 4px 8px; }
+body.home h1 { color: #fff; }
+body.home .lead { color: #e6dfd5; margin-inline: auto; }
+body.home footer { color: #cfc6ba; border-top-color: rgba(255,255,255,.2); text-align: center; }
+body.home .card { border-color: transparent; box-shadow: 0 8px 24px rgba(0,0,0,.35); }
