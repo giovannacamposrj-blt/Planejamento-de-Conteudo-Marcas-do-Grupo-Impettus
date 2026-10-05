@@ -36,6 +36,8 @@ Os links entre páginas usam caminhos absolutos (`/bendito/`, `/assets/...`) no 
 
 **Fundos fotográficos do portal:** a home e as páginas de cada marca (lista de meses / "em construção") têm foto de fundo com véu escuro. As fotos ficam em `assets/fundos/` (`home.webp`, `<marca>.jpg`) e são ligadas no `site.css` pelas classes `body.home` e `body.bg-<marca>` (a página da marca usa `class="b-<marca> brand-bg bg-<marca>"` no `<body>`). Para trocar uma foto, substitua o arquivo mantendo o nome. Isso **não** se aplica às páginas de mês, que têm visual próprio.
 
+**Transição entre páginas:** todas as páginas (portal e meses) têm `@view-transition { navigation: auto; }` com um fade de 0,4 s; navegadores sem suporte fazem só um fade-in e quem prefere menos movimento não vê animação. Em um mês novo copiado do anterior o bloco já vem junto (fica no `<style>` do `<head>`).
+
 ## Anatomia da página de mês
 
 Todas têm 4 seções, nesta ordem (os links do menu apontam para esses IDs):

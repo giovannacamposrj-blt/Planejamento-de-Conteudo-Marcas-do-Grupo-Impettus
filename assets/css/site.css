@@ -93,3 +93,15 @@ body.home .card { border-color: transparent; box-shadow: 0 8px 24px rgba(0,0,0,.
 body.brand-bg .months { max-width: 720px; margin-inline: auto; }
 body.brand-bg .months a { box-shadow: 0 8px 24px rgba(0,0,0,.35); border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; }
 body.brand-bg .soon .badge { color: #fff; border-color: rgba(255,255,255,.7); }
+/* Transição suave entre páginas (View Transitions entre documentos).
+   Chrome, Edge e Safari recentes animam; navegadores sem suporte fazem só um fade-in. */
+@view-transition { navigation: auto; }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: .4s; animation-timing-function: ease; }
+@supports not (view-transition-name: none) {
+  body { animation: pagein .4s ease both; }
+  @keyframes pagein { from { opacity: 0; } }
+}
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+  body { animation: none !important; }
+}
