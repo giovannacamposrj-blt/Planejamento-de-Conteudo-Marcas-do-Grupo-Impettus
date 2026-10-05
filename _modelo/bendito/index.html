@@ -216,6 +216,10 @@
   .cal-chip.f-reels.is-draft{color:var(--maroon);}
   .cal-chip.f-post.is-draft{color:var(--brown);}
   .cal-chip.f-carrossel.is-draft{color:#b9730f;}
+  a.cal-c{text-decoration:none;color:inherit;transition:transform .15s,border-color .15s,box-shadow .15s;}
+  a.cal-c:hover,a.cal-c:focus-visible{transform:translateY(-2px);border-color:var(--maroon);box-shadow:0 6px 16px rgba(58,34,22,.14);outline:none;}
+  .postcard{scroll-margin-top:24px;}
+  .postcard:target{outline:2px solid var(--maroon);outline-offset:4px;}
   .cal .ed{font-size:11px;line-height:1.3;color:var(--brown-soft);font-weight:500;}
   .cal .dc{font-size:10.5px;line-height:1.3;font-weight:600;color:var(--maroon);}
   .cal .dc b{background:var(--maroon);color:#fff;border-radius:4px;padding:0 4px;margin-right:2px;font-size:9.5px;}
@@ -539,7 +543,7 @@
         <p class="kicker">01 &middot; Visão geral</p>
         <h2>Calendário &mdash; outubro</h2>
       </div>
-      <div class="sub">Todo dia com conteúdo mostra o que vai ao ar: formato, editoria e, quando ainda não está pronto, a marca de rascunho.</div>
+      <div class="sub">Todo dia com conteúdo mostra o que vai ao ar: formato, editoria e, quando ainda não está pronto, a marca de rascunho. Clique num dia para ir direto ao post.</div>
     </div>
 
     <div class="cal" role="grid">
@@ -553,37 +557,37 @@
       <div class="cal-c empty" aria-hidden="true"></div>
       <div class="cal-c empty" aria-hidden="true"></div>
       <div class="cal-c empty" aria-hidden="true"></div>
-      <div class="cal-c has is-draft"><span class="dn">1</span><span class="mwd">quinta-feira</span><span class="chips"><span class="cal-chip f-reels is-draft"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z" fill="currentColor"/></svg><span>Reels</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span><span class="cal-chip f-rascunho"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 3 0l0 0a2 2 0 0 1 0 3L8 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Rascunho</span></span></span><span class="dc"><b>DC</b> ☕ Dia Internacional do Café</span><span class="ed">Data comemorativa</span></div>
+      <a class="cal-c has is-draft" href="#post-01"><span class="dn">1</span><span class="mwd">quinta-feira</span><span class="chips"><span class="cal-chip f-reels is-draft"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z" fill="currentColor"/></svg><span>Reels</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span><span class="cal-chip f-rascunho"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 3 0l0 0a2 2 0 0 1 0 3L8 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Rascunho</span></span></span><span class="dc"><b>DC</b> ☕ Dia Internacional do Café</span><span class="ed">Data comemorativa</span></a>
       <div class="cal-c blank"><span class="dn">2</span><span class="mwd">sexta-feira</span></div>
-      <div class="cal-c has"><span class="dn">3</span><span class="mwd">sábado</span><span class="chips"><span class="cal-chip f-reels"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z" fill="currentColor"/></svg><span>Reels</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span></span><span class="ed">Lançamento</span></div>
-      <div class="cal-c has is-draft"><span class="dn">4</span><span class="mwd">domingo</span><span class="chips"><span class="cal-chip f-reels is-draft"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z" fill="currentColor"/></svg><span>Reels</span></span><span class="cal-chip f-post is-draft"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9.5" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 3.5 3-3 4 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Post</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span><span class="cal-chip f-rascunho"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 3 0l0 0a2 2 0 0 1 0 3L8 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Rascunho</span></span></span><span class="ed">Unidade nova / Evento</span></div>
+      <a class="cal-c has" href="#post-03"><span class="dn">3</span><span class="mwd">sábado</span><span class="chips"><span class="cal-chip f-reels"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z" fill="currentColor"/></svg><span>Reels</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span></span><span class="ed">Lançamento</span></a>
+      <a class="cal-c has is-draft" href="#post-04"><span class="dn">4</span><span class="mwd">domingo</span><span class="chips"><span class="cal-chip f-reels is-draft"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z" fill="currentColor"/></svg><span>Reels</span></span><span class="cal-chip f-post is-draft"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9.5" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 3.5 3-3 4 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Post</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span><span class="cal-chip f-rascunho"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 3 0l0 0a2 2 0 0 1 0 3L8 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Rascunho</span></span></span><span class="ed">Unidade nova / Evento</span></a>
       <div class="cal-c blank"><span class="dn">5</span><span class="mwd">segunda-feira</span></div>
-      <div class="cal-c has"><span class="dn">6</span><span class="mwd">terça-feira</span><span class="chips"><span class="cal-chip f-reels"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z" fill="currentColor"/></svg><span>Reels</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span></span><span class="ed">Humanização</span></div>
-      <div class="cal-c has"><span class="dn">7</span><span class="mwd">quarta-feira</span><span class="chips"><span class="cal-chip f-post"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9.5" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 3.5 3-3 4 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Post</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span></span><span class="ed">Almoço</span></div>
+      <a class="cal-c has" href="#post-06"><span class="dn">6</span><span class="mwd">terça-feira</span><span class="chips"><span class="cal-chip f-reels"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z" fill="currentColor"/></svg><span>Reels</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span></span><span class="ed">Humanização</span></a>
+      <a class="cal-c has" href="#post-07"><span class="dn">7</span><span class="mwd">quarta-feira</span><span class="chips"><span class="cal-chip f-post"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9.5" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 3.5 3-3 4 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Post</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span></span><span class="ed">Almoço</span></a>
       <div class="cal-c blank"><span class="dn">8</span><span class="mwd">quinta-feira</span></div>
-      <div class="cal-c has"><span class="dn">9</span><span class="mwd">sexta-feira</span><span class="chips"><span class="cal-chip f-post"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9.5" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 3.5 3-3 4 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Post</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span></span><span class="dc"><b>DC</b> 🍰 Dia da Sobremesa</span><span class="ed">Dia da sobremesa</span></div>
+      <a class="cal-c has" href="#post-09"><span class="dn">9</span><span class="mwd">sexta-feira</span><span class="chips"><span class="cal-chip f-post"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9.5" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 3.5 3-3 4 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Post</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span></span><span class="dc"><b>DC</b> 🍰 Dia da Sobremesa</span><span class="ed">Dia da sobremesa</span></a>
       <div class="cal-c blank"><span class="dn">10</span><span class="mwd">sábado</span></div>
-      <div class="cal-c has is-draft"><span class="dn">11</span><span class="mwd">domingo</span><span class="chips"><span class="cal-chip f-reels is-draft"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z" fill="currentColor"/></svg><span>Reels</span></span><span class="cal-chip f-post"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9.5" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 3.5 3-3 4 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Post</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span><span class="cal-chip f-rascunho"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 3 0l0 0a2 2 0 0 1 0 3L8 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Rascunho</span></span></span><span class="dc"><b>DC</b> 🍮 Dia do Doce de Leite</span><span class="ed">Doce de leite / Unidade nova</span></div>
+      <a class="cal-c has is-draft" href="#post-11"><span class="dn">11</span><span class="mwd">domingo</span><span class="chips"><span class="cal-chip f-reels is-draft"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z" fill="currentColor"/></svg><span>Reels</span></span><span class="cal-chip f-post"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9.5" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 3.5 3-3 4 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Post</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span><span class="cal-chip f-rascunho"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 3 0l0 0a2 2 0 0 1 0 3L8 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Rascunho</span></span></span><span class="dc"><b>DC</b> 🍮 Dia do Doce de Leite</span><span class="ed">Doce de leite / Unidade nova</span></a>
       <div class="cal-c has"><span class="dn">12</span><span class="mwd">segunda-feira</span><span class="dc"><b>DC</b> 🎈 Dia das Crianças</span><span class="ed">Sem post neste dia</span></div>
       <div class="cal-c blank"><span class="dn">13</span><span class="mwd">terça-feira</span></div>
-      <div class="cal-c has"><span class="dn">14</span><span class="mwd">quarta-feira</span><span class="chips"><span class="cal-chip f-carrossel"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7.5" y="3.5" width="13" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 8v11a1.5 1.5 0 0 0 1.5 1.5H16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Carrossel</span></span></span><span class="ed">Happy hour</span></div>
+      <a class="cal-c has" href="#post-14"><span class="dn">14</span><span class="mwd">quarta-feira</span><span class="chips"><span class="cal-chip f-carrossel"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7.5" y="3.5" width="13" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 8v11a1.5 1.5 0 0 0 1.5 1.5H16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Carrossel</span></span></span><span class="ed">Happy hour</span></a>
       <div class="cal-c blank"><span class="dn">15</span><span class="mwd">quinta-feira</span></div>
-      <div class="cal-c has"><span class="dn">16</span><span class="mwd">sexta-feira</span><span class="chips"><span class="cal-chip f-post"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9.5" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 3.5 3-3 4 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Post</span></span></span><span class="dc"><b>DC</b> 🥐 Dia do Pão</span><span class="ed">Dia do pão</span></div>
+      <a class="cal-c has" href="#post-16"><span class="dn">16</span><span class="mwd">sexta-feira</span><span class="chips"><span class="cal-chip f-post"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9.5" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 3.5 3-3 4 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Post</span></span></span><span class="dc"><b>DC</b> 🥐 Dia do Pão</span><span class="ed">Dia do pão</span></a>
       <div class="cal-c blank"><span class="dn">17</span><span class="mwd">sábado</span></div>
-      <div class="cal-c has"><span class="dn">18</span><span class="mwd">domingo</span><span class="chips"><span class="cal-chip f-carrossel"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7.5" y="3.5" width="13" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 8v11a1.5 1.5 0 0 0 1.5 1.5H16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Carrossel</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span></span><span class="ed">Unidade nova</span></div>
+      <a class="cal-c has" href="#post-18"><span class="dn">18</span><span class="mwd">domingo</span><span class="chips"><span class="cal-chip f-carrossel"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7.5" y="3.5" width="13" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 8v11a1.5 1.5 0 0 0 1.5 1.5H16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Carrossel</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span></span><span class="ed">Unidade nova</span></a>
       <div class="cal-c blank"><span class="dn">19</span><span class="mwd">segunda-feira</span></div>
-      <div class="cal-c has"><span class="dn">20</span><span class="mwd">terça-feira</span><span class="chips"><span class="cal-chip f-reels"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z" fill="currentColor"/></svg><span>Reels</span></span></span><span class="ed">Produtos</span></div>
+      <a class="cal-c has" href="#post-20"><span class="dn">20</span><span class="mwd">terça-feira</span><span class="chips"><span class="cal-chip f-reels"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z" fill="currentColor"/></svg><span>Reels</span></span></span><span class="ed">Produtos</span></a>
       <div class="cal-c blank"><span class="dn">21</span><span class="mwd">quarta-feira</span></div>
-      <div class="cal-c has"><span class="dn">22</span><span class="mwd">quinta-feira</span><span class="chips"><span class="cal-chip f-post"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9.5" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 3.5 3-3 4 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Post</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span></span><span class="ed">Almoço</span></div>
-      <div class="cal-c has"><span class="dn">23</span><span class="mwd">sexta-feira</span><span class="chips"><span class="cal-chip f-carrossel"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7.5" y="3.5" width="13" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 8v11a1.5 1.5 0 0 0 1.5 1.5H16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Carrossel</span></span></span><span class="ed">Happy hour</span></div>
+      <a class="cal-c has" href="#post-22"><span class="dn">22</span><span class="mwd">quinta-feira</span><span class="chips"><span class="cal-chip f-post"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9.5" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 3.5 3-3 4 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Post</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span></span><span class="ed">Almoço</span></a>
+      <a class="cal-c has" href="#post-23"><span class="dn">23</span><span class="mwd">sexta-feira</span><span class="chips"><span class="cal-chip f-carrossel"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7.5" y="3.5" width="13" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 8v11a1.5 1.5 0 0 0 1.5 1.5H16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Carrossel</span></span></span><span class="ed">Happy hour</span></a>
       <div class="cal-c blank"><span class="dn">24</span><span class="mwd">sábado</span></div>
-      <div class="cal-c has"><span class="dn">25</span><span class="mwd">domingo</span><span class="chips"><span class="cal-chip f-reels"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z" fill="currentColor"/></svg><span>Reels</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span></span><span class="ed">Unidade nova</span></div>
+      <a class="cal-c has" href="#post-25"><span class="dn">25</span><span class="mwd">domingo</span><span class="chips"><span class="cal-chip f-reels"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z" fill="currentColor"/></svg><span>Reels</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span></span><span class="ed">Unidade nova</span></a>
       <div class="cal-c blank"><span class="dn">26</span><span class="mwd">segunda-feira</span></div>
-      <div class="cal-c has"><span class="dn">27</span><span class="mwd">terça-feira</span><span class="chips"><span class="cal-chip f-carrossel"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7.5" y="3.5" width="13" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 8v11a1.5 1.5 0 0 0 1.5 1.5H16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Carrossel</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span></span><span class="ed">Engajamento</span></div>
+      <a class="cal-c has" href="#post-27"><span class="dn">27</span><span class="mwd">terça-feira</span><span class="chips"><span class="cal-chip f-carrossel"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7.5" y="3.5" width="13" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 8v11a1.5 1.5 0 0 0 1.5 1.5H16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Carrossel</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span></span><span class="ed">Engajamento</span></a>
       <div class="cal-c blank"><span class="dn">28</span><span class="mwd">quarta-feira</span></div>
-      <div class="cal-c has"><span class="dn">29</span><span class="mwd">quinta-feira</span><span class="chips"><span class="cal-chip f-post"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9.5" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 3.5 3-3 4 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Post</span></span></span><span class="ed">Produto</span></div>
+      <a class="cal-c has" href="#post-29"><span class="dn">29</span><span class="mwd">quinta-feira</span><span class="chips"><span class="cal-chip f-post"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9.5" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 3.5 3-3 4 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Post</span></span></span><span class="ed">Produto</span></a>
       <div class="cal-c blank"><span class="dn">30</span><span class="mwd">sexta-feira</span></div>
-      <div class="cal-c has is-draft"><span class="dn">31</span><span class="mwd">sábado</span><span class="chips"><span class="cal-chip f-carrossel"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7.5" y="3.5" width="13" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 8v11a1.5 1.5 0 0 0 1.5 1.5H16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Carrossel</span></span><span class="cal-chip f-post is-draft"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9.5" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 3.5 3-3 4 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Post</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span><span class="cal-chip f-rascunho"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 3 0l0 0a2 2 0 0 1 0 3L8 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Rascunho</span></span></span><span class="ed">Engajamento / Campanha</span></div>
+      <a class="cal-c has is-draft" href="#post-31"><span class="dn">31</span><span class="mwd">sábado</span><span class="chips"><span class="cal-chip f-carrossel"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7.5" y="3.5" width="13" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 8v11a1.5 1.5 0 0 0 1.5 1.5H16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Carrossel</span></span><span class="cal-chip f-post is-draft"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9.5" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 3.5 3-3 4 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Post</span></span><span class="cal-chip f-stories"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4.2 2.4"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></svg><span>Stories</span></span><span class="cal-chip f-rascunho"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 3 0l0 0a2 2 0 0 1 0 3L8 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Rascunho</span></span></span><span class="ed">Engajamento / Campanha</span></a>
       <div class="cal-c empty" aria-hidden="true"></div>
     </div>
   </section>
@@ -684,7 +688,7 @@
     </div>
 
     <div class="postlist">
-      <article class="postcard">
+      <article class="postcard" id="post-01">
         <div class="postcard-media isdraft"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span><span class="lbl">Capa ainda não definida</span><span class="chip">Em criação</span></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -700,7 +704,7 @@
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-03">
         <div class="postcard-media"><span class="chip">Reels</span><img src="covers/cover_0306.jpg" alt="Reels 03/10"></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -720,7 +724,7 @@ Vem descobrir o seu momento favorito 🤎</div>
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-04">
         <div class="postcard-media isdraft"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span><span class="lbl">Capa ainda não definida</span><span class="chip">Em criação</span></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -736,7 +740,7 @@ Vem descobrir o seu momento favorito 🤎</div>
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-04-2">
         <div class="postcard-media isdraft"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span><span class="lbl">Capa ainda não definida</span><span class="chip">Em criação</span></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -752,7 +756,7 @@ Vem descobrir o seu momento favorito 🤎</div>
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-06">
         <div class="postcard-media"><span class="chip">Reels</span><img src="covers/cover_0610.jpg" alt="Reels 06/10"></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -768,7 +772,7 @@ Vem descobrir o seu momento favorito 🤎</div>
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-07">
         <div class="postcard-media"><span class="chip">Post</span><img src="covers/cover_0710.jpg" alt="Post 07/10"></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -789,7 +793,7 @@ Bora almoçar com a gente hoje?</div>
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-09">
         <div class="postcard-media"><span class="chip">Post</span><img src="covers/cover_0910.jpg" alt="Post 09/10"></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -805,7 +809,7 @@ Bora almoçar com a gente hoje?</div>
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-11">
         <div class="postcard-media"><span class="chip">Post</span><img src="covers/cover_1110_a.jpg" alt="Post 11/10"></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -826,7 +830,7 @@ A gente garante, você vai querer voltar! Envia esse post para quem amaria vir c
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-11-2">
         <div class="postcard-media isdraft"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span><span class="lbl">Capa ainda não definida</span><span class="chip">Em criação</span></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -842,7 +846,7 @@ A gente garante, você vai querer voltar! Envia esse post para quem amaria vir c
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-14">
         <div class="postcard-media"><span class="chip">Carrossel &middot; 3 telas</span><img src="carrossel/car_1410_1.jpg" alt="Carrossel 14/10"></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -862,7 +866,7 @@ No fim, quem dita o ritmo é você. A qualquer hora do dia ⏰</div>
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-16">
         <div class="postcard-media"><span class="chip">Post</span><img src="covers/cover_1610.jpg" alt="Post 16/10"></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -880,7 +884,7 @@ Envia esse post para quem vem com você -></div>
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-18">
         <div class="postcard-media"><span class="chip">Carrossel &middot; 3 telas</span><img src="carrossel/car_1810_1.jpg" alt="Carrossel 18/10"></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -900,7 +904,7 @@ Bora testar essa combinação?</div>
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-20">
         <div class="postcard-media"><span class="chip">Reels</span><img src="covers/cover_2010.jpg" alt="Reels 20/10"></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -918,7 +922,7 @@ Marca aqui nos comentários a sua dupla que sempre fala “vamos lá beber só u
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-22">
         <div class="postcard-media"><span class="chip">Post</span><img src="covers/cover_2210.jpg" alt="Post 22/10"></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -934,7 +938,7 @@ Marca aqui nos comentários a sua dupla que sempre fala “vamos lá beber só u
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-23">
         <div class="postcard-media"><span class="chip">Carrossel &middot; 2 telas</span><img src="carrossel/car_2310_1.jpg" alt="Carrossel 23/10"></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -956,7 +960,7 @@ Porque tem horas que pedem só isso: um brinde e um momento compartilhado 🤍</
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-25">
         <div class="postcard-media"><span class="chip">Reels</span><img src="covers/cover_2510.jpg" alt="Reels 25/10"></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -976,7 +980,7 @@ Vem tomar o seu com vista pro mar e boa companhia 🥐</div>
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-27">
         <div class="postcard-media"><span class="chip">Carrossel &middot; 5 telas</span><img src="carrossel/car_2710_1.jpg" alt="Carrossel 27/10"></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -996,7 +1000,7 @@ No fim, fica difícil dizer “não” pra tudo isso, né? 😮‍💨💓</div>
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-29">
         <div class="postcard-media"><span class="chip">Post</span><img src="covers/cover_2910.jpg" alt="Post 29/10"></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -1014,7 +1018,7 @@ Passe no Bendito e aproveite o seu.</div>
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-31">
         <div class="postcard-media"><span class="chip">Carrossel &middot; 2 telas</span><img src="carrossel/car_3110_1.jpg" alt="Carrossel 31/10"></div>
         <div class="postcard-body">
           <div class="postcard-top">
@@ -1032,7 +1036,7 @@ Passa pro lado, escolhe seu destino e salva pra escolher depois. →</div>
         </div>
       </article>
 
-      <article class="postcard">
+      <article class="postcard" id="post-31-2">
         <div class="postcard-media isdraft"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></span><span class="lbl">Capa ainda não definida</span><span class="chip">Em criação</span></div>
         <div class="postcard-body">
           <div class="postcard-top">
