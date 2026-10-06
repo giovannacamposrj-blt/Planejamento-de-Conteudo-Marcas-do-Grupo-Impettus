@@ -72,6 +72,18 @@ Observações específicas:
 
 Para uma marca "em construção" que ganha seu primeiro mês: troque `/<marca>/index.html` pela lista de meses (copie de `bendito/index.html`, ajuste cor de acento `b-<marca>` do `site.css` e logo) e crie a pasta do mês a partir do `_modelo/`.
 
+## Comando `/atualizar-post`
+
+Atalho para atualizar um post (legenda, link do Drive, capa e status) sem editar HTML: `.claude/commands/atualizar-post.md`. Exemplo de uso, com o Claude aberto nesta pasta:
+
+```
+/atualizar-post bendito 04/10
+Legenda: <texto colado>
+Drive: https://drive.google.com/...
+```
+
+O comando segue as convenções deste arquivo. Limitação conhecida: capa de **vídeo** exige um print/quadro enviado pelo usuário (não há ffmpeg instalado).
+
 ## Publicar
 
 - Push na `main` → a Vercel publica sozinha (~1 min). Projeto Vercel: *Framework Preset: Other*, sem build command, diretório de saída = raiz.
