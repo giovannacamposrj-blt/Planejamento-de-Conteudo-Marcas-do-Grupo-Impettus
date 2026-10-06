@@ -21,8 +21,8 @@ Leia primeiro o `CLAUDE.md` (identidade, anatomia da página, convenções de im
    - Se for **vídeo (Reels)**: tente a miniatura do próprio Drive; se não for possível extrair um quadro, **peça ao usuário um print/capa** e diga isso claramente. Não invente imagem.
    - Troque o bloco "Capa ainda não definida / Em criação" (`isdraft`) pelo `<img>` da capa.
 4. **Grade do feed:** troque o tile "Em criação" pelo tile com a capa e a legenda de data/formato, no mesmo padrão dos outros.
-5. **Calendário:** remova a marca de rascunho do dia/item (e o estilo tracejado do chip, se não restar nenhum rascunho no dia).
-6. **Contadores/avisos:** se a página tiver contagem de "prontas / em criação" (Mané, no hero), atualize.
+5. **Tirar do rascunho (padrão):** todo post atualizado por este comando **deixa de ser rascunho**, a menos que o usuário diga que continua em rascunho. Remova o chip "Rascunho" do cabeçalho do card, a classe `is-draft` do card, o chip "Rascunho" e a classe `is-draft` da célula do calendário (e o estilo tracejado do chip do formato, se não restar nenhum rascunho no dia).
+6. **Contadores/avisos:** se a página tiver contagem de "prontas / em criação" (Mané, no hero), atualize. Se o formato mudou (ex.: Carrossel → Reels), troque-o no card, na grade e no calendário e ajuste a contagem de formatos do texto do calendário.
 7. **Stories:** se o usuário enviou a pasta de stories do dia, atualize o link "Ver stories do dia".
 8. Confira que todos os `src`/`href` novos existem, abra a página no navegador local (servidor estático) e verifique o card, a grade e o calendário. Se algo não puder ser verificado, diga.
 9. Faça um commit local com mensagem clara (ex.: "Bendito 04/10: legenda e material"). **Não faça push**: avise que falta dar o Push origin no GitHub Desktop.
